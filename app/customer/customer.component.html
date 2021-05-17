@@ -1,0 +1,19 @@
+<p>customer works!</p>
+<table border="3">
+    <tr>
+        <th>custno</th>
+        <th>custName</th>
+        <th>email</th>
+        <th>pwd</th>
+        <th>mobile</th>
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let e of custs | async">
+        <td>{{e.custId}}</td>
+        <td>{{e.custName}}</td>
+        <td>{{e.cusEmail}}</td>
+        <td>{{e.cusPassword}}</td>
+        <td>{{e.cusMobile}}</td>
+        <td>{{e.cusAddress}}</td>
+    </tr>
+</table>
